@@ -5,69 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puanlama Sayfası</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 
     <header>
-        <h1> Puanlar </h1>
-        <nav>
-            <a href="index.html">Ana Sayfa</a>
-            <a href="kategoriler.html">Kategoriler</a>
-            <a href="puan.html">Puanlar</a>
-            <a href="yorumlar.html">Yorumlar</a>
-            <a href="iletisim.html">İletişim</a>
-        </nav>
+        <h1>Puanlama Sayfası</h1>
     </header>
 
     <div class="ratings">
-        <h2>Yemek Puanı</h2>
-        <div class="category-rating">
-            <div class="stars">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>☆</span>
-                <span>☆</span>
+        <h2>Yıldızlarla Puan Verin</h2>
+
+        <div class="category">
+            <h3>Yemek</h3>
+            <div class="stars" data-category="yemek">
+                <span data-value="1">☆</span>
+                <span data-value="2">☆</span>
+                <span data-value="3">☆</span>
+                <span data-value="4">☆</span>
+                <span data-value="5">☆</span>
             </div>
-            <p>4/5 Yıldız</p>
+            <p class="result" id="yemek-result">Henüz bir puan verilmedi.</p>
         </div>
 
-        <h2>Kitap Puanı</h2>
-        <div class="category-rating">
-            <div class="stars">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>☆</span>
+        <div class="category">
+            <h3>Kitap</h3>
+            <div class="stars" data-category="kitap">
+                <span data-value="1">☆</span>
+                <span data-value="2">☆</span>
+                <span data-value="3">☆</span>
+                <span data-value="4">☆</span>
+                <span data-value="5">☆</span>
             </div>
-            <p>4/5 Yıldız</p>
+            <p class="result" id="kitap-result">Henüz bir puan verilmedi.</p>
         </div>
 
-        <h2>Müzik Puanı</h2>
-        <div class="category-rating">
-            <div class="stars">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
+        <div class="category">
+            <h3>Müzik</h3>
+            <div class="stars" data-category="muzik">
+                <span data-value="1">☆</span>
+                <span data-value="2">☆</span>
+                <span data-value="3">☆</span>
+                <span data-value="4">☆</span>
+                <span data-value="5">☆</span>
             </div>
-            <p>5/5 Yıldız</p>
+            <p class="result" id="muzik-result">Henüz bir puan verilmedi.</p>
         </div>
 
-        <h2>Film Puanı</h2>
-        <div class="category-rating">
-            <div class="stars">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>☆</span>
+        <div class="category">
+            <h3>Film</h3>
+            <div class="stars" data-category="film">
+                <span data-value="1">☆</span>
+                <span data-value="2">☆</span>
+                <span data-value="3">☆</span>
+                <span data-value="4">☆</span>
+                <span data-value="5">☆</span>
             </div>
-            <p>4/5 Yıldız</p>
+            <p class="result" id="film-result">Henüz bir puan verilmedi.</p>
         </div>
     </div>
 
@@ -75,6 +68,6 @@
         <a href="index.html">Ana Sayfaya Dön</a>
     </div>
 
-    <script src="main.js"></script>
+    <script src="main2.js"></script>
 </body>
 </html>
