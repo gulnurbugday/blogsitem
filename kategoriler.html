@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategoriler</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Hoşgeldiniz! Kategoriler</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="kategoriler.html">Kategoriler</a>
+            <a href="puan.html">Puanlar</a>
+            <a href="yorumlar.html">Yorumlar</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+
+    <div class="categories">
+        <div class="category-card" onclick="showCategory('Müzik')">
+            <h2>Müzik</h2>
+        </div>
+        <div class="category-card" onclick="showCategory('Filmler')">
+            <h2>Filmler</h2>
+        </div>
+        <div class="category-card" onclick="showCategory('Kitaplar')">
+            <h2>Kitaplar</h2>
+        </div>
+        <div class="category-card" onclick="showCategory('Yemek')">
+            <h2>Yemek</h2>
+        </div>
+    </div>
+
+    <div id="category-details" class="category-details">
+        <h3 id="category-title"></h3>
+        <p id="category-description"></p>
+        <button onclick="hideCategory()">Kapat</button>
+    </div>
+
+    <script src="main.js"></script> 
+</body>
+</html>
+
